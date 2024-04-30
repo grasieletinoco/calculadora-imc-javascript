@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #efebfa;
+}
+
+
+
+/* CALCULADORA */
+.CalculadoraImc{
+    margin-top: 3rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form{
+    margin: 0 auto;
+    background-color: #F5F5F5;
+    max-width: 335px;
+    height: 335px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: #DCDCDC 0px 1px 2px 0px, #DCDCDC 0px 1px 3px 1px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.formTitulo{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #2b6cb0;
+}
+
+.campoForm{
+    padding: 8px;
+}
+
+.formLabel{
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.formInput{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #2b6cb0;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+#btnCalcular{
+    width: 100%;
+    background-color: #805AD5;
+    color: #FFFAFA;
+    border: 0;
+    text-transform: uppercase;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#btnCalcular:hover{
+    background-color: #6B46C1;
+
+}
+
+#btnLimpar{
+    width: 100%;
+    background-color: #3182ce;
+    color: #FFFAFA;
+    border: 0;
+    text-transform: uppercase;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#btnLimpar:hover{
+    background-color: #2b6cb0;
+
+}
+
+.resultadoTitulo{
+    font-weight: 900;
+}
+
+#resultado{
+    font-size: 14px;
+    font-weight: 600;
+    color: #6B46C1;
+}
+
+
+
+/* TABELA */
+.tabelaConteudo{
+    margin: 0 auto;
+    background-color: #F5F5F5;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+
+.tabelaImc{
+    margin-top: 2rem;
+}
+
+.tabelaTitulo{
+    background-color: #dde4ee;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+td, th{
+    padding: 10px;
+}
+
+.tabelaGrau{
+    text-align: center;
+}
+
+table tbody tr:nth-child(even) td { 
+    background-color: #dde4ee;      
+}
+
+
+
+/* RODAPE */
+.rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    gap: 10px;
+}
+
+.rodape h3{
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1e4b7b;
+}
+  
+.rodape ul{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+  
+.rodape ul li {
+    text-align: center;
+    padding-left: 10px;
+    transition: all 0.2s;
+}
+  
+.rodape ul li:hover {
+    scale: 1.1;
+}

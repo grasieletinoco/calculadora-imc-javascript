@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora IMC- JS</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+  <main>
+
+    <section class="CalculadoraImc">
+      <form class="form">
+
+        <h2 class="formTitulo">Calculadora IMC</h2>
+
+        <div class="campoForm">
+          <label class="formLabel" for="number">Digite Seu Peso: </label>
+          <input type="number" name="number" id="peso" class="formInput">
+        </div>
+
+        <div class="campoForm">
+          <label class="formLabel" for="number">Digite Sua Altura: </label>
+          <input type="number" name="number" id="altura" class="formInput">
+        </div>
+
+        <div class="campoForm">
+          <input type="button" value="Calcular IMC" id="btnCalcular">
+          <input type="reset" value="Limpar" id="btnLimpar">
+        </div>
+
+        <div class="campoForm">
+          <p class="resultadoTitulo">Resultado:</p>
+          <p id="resultado"></p>
+        </div>
+
+      </form>
+    </section>
+
+    <section class="tabelaImc">
+
+      <table border="1" class="tabelaConteudo" >
+
+        <thead>
+          <tr>
+            <td colspan="3" class="tabelaTitulo">Tabela IMC</td>
+          </tr>
+        </thead>
+
+        <tbody>						
+          <tr>
+            <td>IMC</td>
+            <td>Classificação</td>
+            <td class="tabelaGrau">Grau</small></td>
+          </tr>
+          
+          <tr>
+            <td>Menor 18,5</td>
+            <td>Magreza</td>
+            <td class="tabelaGrau">0</td>
+          </tr>
+          
+          <tr>
+            <td>Entre 18,5 e 24,9</td>
+            <td>Normal</td>
+            <td class="tabelaGrau">0</td>
+          </tr>
+          
+          <tr>
+            <td>Entre 25,0 e 29,9</td>
+            <td>Sobrepeso</td>
+            <td class="tabelaGrau">I</td>
+          </tr>
+          
+          <tr>
+            <td>Entre 30,0 e 39,9</td>
+            <td>Obesidade</td>
+            <td class="tabelaGrau">II</td>
+          </tr>
+
+          <tr>
+            <td>Maior 40,0</td>
+            <td>Obesidade Grave</td>
+            <td class="tabelaGrau">III</td>
+          </tr>
+        </tbody>
+
+      </table>
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="rodape">
+        <h3>Desenvolvido por Grasiele Tinoco</h3>
+        <ul>
+            <li> <a href="https://github.com/grasieletinoco" target="_blank" title="GitHub"><img src="assets/icons/social-media-github.svg" width="30px" height="30px"> </a></li>
+            <li> <a href="https://www.linkedin.com/in/grasieletinoco/" target="_blank" title="LinkedIn"><img src="assets/icons/social-media-linkedin.svg" width="30px" height="30px"> </a></li>
+        </ul>    
+    </div>
+
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  
+</body>
+</html>
